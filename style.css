@@ -1,18 +1,10 @@
+body {
+  display: flex;
+  justify-content: space-between;
+}
+
 .box {
-  display: inline-block;
   width: 200px;
   height: 200px;
   background-color: tomato;
-}
-
-.box:first-child {
-  float: left;
-}
-
-.box:last-child {
-  float: right;
-}
-
-.box:nth-child(2) {
-  margin: 0 25%;
 }

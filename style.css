@@ -22,18 +22,10 @@ body {
 
 .box:first-child {
   flex-grow: 1;
-  flex-shrink: 5;
   background-color: tomato;
-}
-
-.box:nth-child(2) {
-  flex-grow: 2;
-  flex-shrink: 0;
-  background-color: teal;
 }
 
 .box:last-child {
   flex-grow: 1;
-  flex-shrink: 1;
-  background-color: orange;
+  background-color: teal;
 }

@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   row-gap: 10px;
   column-gap: 20px;
   height: 100vh;
@@ -19,12 +19,6 @@
   background-color: tomato;
 }
 
-.box:nth-child(3) {
-  order: 2;
-  background-color: blueviolet;
-}
-
-.box:nth-child(6) {
-  order: 1;
-  background-color: aqua;
+.box:first-child {
+  align-self: flex-start;
 }

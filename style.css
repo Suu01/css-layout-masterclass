@@ -21,7 +21,11 @@ body {
 }
 
 .box:first-child {
-  flex-grow: 1;
+  /* flex-grow: 0; */
+  /* flex-shrink: 3; */
+  /* flex-basis: 500px; */
+  /* flex: 1 0 500px; */
+  flex: 0 1 500px;
   background-color: tomato;
 }
 

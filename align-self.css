@@ -1,0 +1,24 @@
+.father {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  column-gap: 20px;
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  color: white;
+  font-size: 36px;
+  background-color: tomato;
+}
+
+.box:first-child {
+  align-self: flex-start;
+}

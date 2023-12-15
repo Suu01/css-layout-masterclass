@@ -5,22 +5,42 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-%alert {
+@mixin alert($bgColor, $borderColor) {
+  background-color: $bgColor;
   margin: 10px;
   padding: 10px 20px;
   border-radius: 10px;
-  border: 1px dashed black;
+  border: 1px dashed $borderColor;
 }
 
 .success {
-  @extend %alert;
-  background-color: green;
+  @include alert(green, blue);
 }
+
 .warning {
-  @extend %alert;
-  background-color: tomato;
+  @include alert(tomato, white);
 }
+
 .error {
-  @extend %alert;
-  background-color: yellow;
+  @include alert(yellow, black);
 }
+
+// %alert {
+//   margin: 10px;
+//   padding: 10px 20px;
+//   border-radius: 10px;
+//   border: 1px dashed black;
+// }
+
+// .success {
+//   @extend %alert;
+//   background-color: green;
+// }
+// .warning {
+//   @extend %alert;
+//   background-color: tomato;
+// }
+// .error {
+//   @extend %alert;
+//   background-color: yellow;
+// }

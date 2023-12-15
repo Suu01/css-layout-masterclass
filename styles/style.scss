@@ -5,24 +5,36 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1200px;
+
 @mixin alert($bgColor, $borderColor) {
   background-color: $bgColor;
   margin: 10px;
   padding: 10px 20px;
   border-radius: 10px;
   border: 1px dashed $borderColor;
+  @content;
 }
 
 .success {
-  @include alert(green, blue);
+  @include alert(green, blue) {
+    font-size: 12px;
+  }
 }
 
 .warning {
-  @include alert(tomato, white);
+  @include alert(tomato, white) {
+    text-decoration: underline;
+  }
 }
 
 .error {
-  @include alert(yellow, black);
+  @include alert(yellow, black) {
+    text-transform: uppercase;
+  }
 }
 
 // %alert {

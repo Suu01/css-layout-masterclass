@@ -3,7 +3,7 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 1024px;
 $breakpoint-xl: 1200px;
 
-@mixin smallDevide {
+@mixin smallDevice {
   @media screen and (min-width: $breakpoint-sm) {
     @content;
   }
